@@ -1,0 +1,111 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  padding-left: 5px;
+  background-color: #000000;
+  color: #00ff00;
+  position: relative;
+  margin: 0;
+  padding-bottom: 4rem;
+  min-height: 100%;
+}
+
+h1 {
+  color: #00ff00;
+}
+
+#content{
+  /* todo */
+}
+
+/*
+ * The commandline section
+ */
+#bottom{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 98%;
+  display: inline;
+  background-color: #000000;
+}
+
+span {
+  width: 200px;
+  padding-right: 10px;
+}
+input, span {
+    display:table-cell;
+}
+
+.row {
+  display:table;
+  width: 100%;
+}
+
+#command {
+  width: 100%;
+  color: #00ff00;
+  background-color: #000000;
+  border-color: #000000;
+  outline: none;
+  display:table-cell;
+}
+
+.post {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #00ff00;
+  padding: 10px;
+  width: auto;
+  display:inline-block;
+}
+
+/* ASCII style table */
+table {
+    border-collapse: collapse;
+    font: medium/1 monospace;
+    margin: 1em;
+    display: inline-block;
+    position: relative;
+    border: 1px dashed #00ff00;
+}
+table td {
+    padding: .5em;
+    position: relative;
+    border: 1px dashed #00ff00;
+}
+table tr td:before {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -8px;
+    left: -8px;
+    border: 1px dashed #00ff00;
+}
+table tr td:last-child:after, table tr:last-child td:after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: -8px;
+    right: -8px;
+}
+table:before {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -7px;
+    right: -7px;
+}
+table:after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: -7px;
+    left: -7px;
+}
